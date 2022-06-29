@@ -1,0 +1,37 @@
+const Router = require('express');
+const router = new Router();
+const appRouter = require('./appRouter');
+const userRouter = require('./userRouter');
+const districtRouter = require('./districtRouter');
+const typeRouter = require('./typeRouter');
+const countryRouter = require('./countryRouter');
+const groupRouter = require('./groupRouter');
+const typeOfPropertyRouter = require('./typeOfPropertyRouter');
+const formRouter = require('./formRouter');
+const departmentRouter = require('./departmentRouter');
+const medicineRouter = require('./medicineRouter');
+const clinicRouter = require('./clinicRouter');
+const clinicDepartmentRouter = require('./clinicDepartmentRouter');
+const firmRouter = require('./firmRouter');
+const firmMedicineRouter = require('./firmMedicineRouter');
+const orderRouter = require('./orderRouter');
+const jsonRouter = require('./jsonRouter');
+
+router.use('/app', appRouter);
+router.use('/user', userRouter);
+router.use('/type', typeRouter);
+router.use('/district', districtRouter);
+router.use('/country', countryRouter);
+router.use('/group', groupRouter);
+router.use('/typeOfProperty', typeOfPropertyRouter);
+router.use('/form', formRouter);
+router.use('/department', departmentRouter);
+router.use('/medicine', medicineRouter);
+router.use('/clinic', clinicRouter);
+router.use('/clinicDepartment', clinicDepartmentRouter);
+router.use('/firm', firmRouter);
+router.use('/firmMedicine', firmMedicineRouter);
+router.use('/order', orderRouter);
+router.use('/json', jsonRouter);
+
+module.exports = router;
